@@ -8,3 +8,7 @@ A project that tells you you're pretty, inspired by the magic mirror in Snow Whi
 
 ```bash
 python3 -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
