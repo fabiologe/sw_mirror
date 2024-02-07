@@ -59,6 +59,7 @@ def main():
         result = model(frame, agnostic_nms=True)[0]
         #print(result)
         detections = sv.Detections.from_yolov8(result)
+        detection = [detections.class_id == 0]  # -------> test if this is enough to classify person 
         #print(detections)
         person_inside = False
 
