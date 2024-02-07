@@ -1,14 +1,10 @@
-Snow white mirror which finally tells me Im pretty
-(only works on linux)
-###create python virtual environment:
-'''
+# Snow White Mirror
+
+A project that tells you you're pretty, inspired by the magic mirror in Snow White. (Note: Only works on Linux)
+
+## Getting Started
+
+### Create a Python virtual environment:
+
+```bash
 python3 -m venv venv
-'''
-###activate the virtual environment:
-'''
-source venv/bin/activate
-'''
-###install dependencies:
-'''
-pip install -r requirements.txt
-'''
