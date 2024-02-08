@@ -1,0 +1,6 @@
+venv/
+detector/img/
+yolo8l.pt
+
+venv/lib64
+yolov8l.pt

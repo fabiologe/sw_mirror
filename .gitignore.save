@@ -1,0 +1,4 @@
+venv/
+detector/img/
+yolo8l.pt
+
