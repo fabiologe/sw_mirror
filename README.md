@@ -1,6 +1,7 @@
 # Snow White Mirror
 
-A project that tells you you're pretty, inspired by the magic mirror in Snow White. (Note: Only works on Linux)
+A mirror that finally tells me Im pretty 
+(Note: Only works on Linux)
 
 ## Getting Started
 
