@@ -4,7 +4,7 @@ import argparse
 from ultralytics import YOLO
 import supervision as sv
 import numpy as np
-from detector.input_stream import detector
+from detector.webcam_stream import detector
 person_inside = False
 #cropping image : 
 '''detection = sv.Detections(...)
