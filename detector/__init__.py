@@ -1,6 +1,9 @@
-from detector.webcam_stream import detector
+from detector.webcam_stream import detector, detector_handler
+from detector.utils import save_image
 from detector.img_stream import count_img
 __all__ = [
     'count_img',
-    'detector'
+    'detector',
+    'detector_handler',
+    'save_image'
 ]

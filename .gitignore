@@ -1,4 +1,5 @@
 venv/
-yolo8l.pt
+yolov8n.pt
 venv/lib64
 yolov8l.pt
+__pycache__
