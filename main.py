@@ -6,22 +6,11 @@ import numpy as np
 from detector.webcam_stream import *
 from detector.img_stream import *
 
-
-
-
-
-
-
-
-
-
 def main():
-        n_img = 4
+        n_img = 1
         folder_path = "detector/img"
         save_path = "detector/img_out"
-        detector_handler(path = folder_path, n_img= n_img)
-        static_detector(folder_path , save_path)
-
+        detector_handler()
 
 
 if __name__ == "__main__":
