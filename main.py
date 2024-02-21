@@ -7,7 +7,6 @@ from detector.webcam_stream import *
 from detector.img_stream import *
 
 def main():
-        n_img = 1
         folder_path = "detector/img"
         save_path = "detector/img_out"
         detector_handler()
