@@ -3,3 +3,4 @@ yolov8n.pt
 venv/lib64
 yolov8l.pt
 __pycache__
+node_modules
