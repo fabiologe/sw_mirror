@@ -11,3 +11,7 @@ def save_image(folder_path, frame):
     cv2.imwrite(img_path, frame)
     time.sleep(3)
     return img_path
+
+def post_img(img, url):
+    
+    pass
