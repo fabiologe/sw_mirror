@@ -4,7 +4,7 @@ import supervision as sv
 import numpy as np
 from detector.webcam_stream import *
 from detector.img_stream import *'''
-from out.post import post_img, post_ez
+from out.post import post_img
 import argparse
 
 def main():
@@ -12,7 +12,7 @@ def main():
         upload =  "../api/uploads"
         save_path = "detector/img_out"
         '''detector_handler()'''
-        post_ez(folder_path, upload)
+        post_img(folder_path, upload)
 
 if __name__ == "__main__":
     main()
