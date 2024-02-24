@@ -1,6 +1,7 @@
 import time
 import cv2
 import os 
+import request
 
 def save_image(folder_path, frame):
     if not os.path.exists(folder_path):
@@ -12,6 +13,4 @@ def save_image(folder_path, frame):
     time.sleep(3)
     return img_path
 
-def post_img(img, url):
-    
-    pass
+

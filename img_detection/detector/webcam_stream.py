@@ -1,11 +1,11 @@
-import cv2
+'''import cv2
 import argparse
 import numpy as np
 import time
 from ultralytics import YOLO
 import supervision as sv
 from detector.img_stream import count_img
-from detector.utils import save_image
+from detector.utils import save_image'''
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="YOLOv8 live")
@@ -40,7 +40,7 @@ def detector():
 
     zone_polygon = (ZONE_POLYGON * np.array(args.webcam_resolution)).astype(int)
     zone = sv.PolygonZone(polygon=zone_polygon, frame_resolution_wh=tuple(args.webcam_resolution))
-    folder_path = "detector/img"
+    folder_path = "img"
     while True:
         ret, frame = cap.read()
         if not ret:
