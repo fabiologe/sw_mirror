@@ -7,6 +7,7 @@ from detector.img_stream import *'''
 from out.post import post_img
 import argparse
 
+
 def main():
         folder_path = "img"        
         upload =  "../api/uploads"

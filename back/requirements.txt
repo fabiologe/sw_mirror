@@ -1,3 +1,6 @@
 ultralytics==8.0.35
-
+Flask==3.0.2
+Flask-Cors == 4.0.0
+Flask==3.0.2
+Flask-Cors == 4.0.0
 supervision==0.15.0 #version >0.15 will use yolo5v by default
