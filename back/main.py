@@ -4,7 +4,7 @@ import supervision as sv
 import numpy as np
 from detector.webcam_stream import *
 from detector.img_stream import *'''
-from out.post import post_img
+
 import argparse
 
 
