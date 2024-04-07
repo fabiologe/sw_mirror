@@ -22,13 +22,14 @@ CORS(app, resources={
 
 app.register_blueprint(send_img_bp)
 
-
+'''
 def main():
         folder_path = "img"        
         upload =  "../api/uploads"
         save_path = "detector/img_out"
-        '''detector_handler()'''
+        detector_handler()
         post_img(folder_path, upload)
+'''
 
 if __name__ == "__main__":
-    main()
+    app.run(debug = True)
