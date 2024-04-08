@@ -9,7 +9,11 @@ import requests
 API_KEY = 'KAUF DIR DEIN EIGENEN API KEY' 
 send_to_openai_bp = Blueprint("send_to_openai",__name__)
 
+'''
+bash command: 
 
+sudo curl -X POST http://localhost:5000/send_to_openai
+'''
 
 
 @send_to_openai_bp.route('/send_to_openai', methods=['POST'])
