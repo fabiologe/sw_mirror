@@ -1,8 +1,8 @@
+import tensorflow as tf
 from transformers import AutoProcessor, TFBlipForQuestionAnswering, DetrImageProcessor, DetrForObjectDetection
 from PIL import Image
+import numpy as np
 import torch
-
-
 
 def get_image_caption(image_path):
     """
@@ -15,22 +15,24 @@ def get_image_caption(image_path):
         str: A string representing the caption for the image.
     """
     image = Image.open(image_path).convert('RGB')
+    image = np.array(image)  # Convert PIL Image to numpy array
 
     model_name = "Salesforce/blip-image-captioning-large"
-    device = "cpu"  # cuda
 
     model = TFBlipForQuestionAnswering.from_pretrained("Salesforce/blip-vqa-base")
 
     processor = AutoProcessor.from_pretrained("Salesforce/blip-vqa-base")
-    text = 'Describe the appearance of the person'
+    text = 'Describe the img'
 
-    inputs = processor(image,text=text, return_tensors='tf').to(device)
+    # Convert the image data to TensorFlow tensor
+    image_tensor = tf.convert_to_tensor(image)
+
+    inputs = processor(images=image_tensor, text=text, return_tensors='tf')
     output = model.generate(**inputs)
 
     caption = processor.decode(output[0], skip_special_tokens=True)
 
     return caption
-
 
 def detect_objects(image_path):
     """
@@ -66,7 +68,7 @@ def detect_objects(image_path):
 
 if __name__ == '__main__':
     image_path = '/home/fabioiologe/Documents/code/sw_mirror/back/img/guy_with_chick.jpg'
-    #detections = detect_objects(image_path)
+    detections = detect_objects(image_path)
     description = get_image_caption(image_path)
-   # print(detections)
+    print(detections)
     print(description)
